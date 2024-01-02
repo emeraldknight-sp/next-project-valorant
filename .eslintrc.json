@@ -1,3 +1,31 @@
 {
-  "extends": "next/core-web-vitals"
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2021,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react/recommended",
+		"plugin:prettier/recommended",
+		"prettier/@typescript-eslint",
+		"prettier/react"
+	],
+	"plugins": ["@typescript-eslint", "react", "prettier"],
+	"rules": {
+		// Adicione aqui suas regras específicas, se necessário
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
 }
